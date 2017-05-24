@@ -68,7 +68,7 @@ describe('create-react-class-integration', () => {
     expect(console.error.calls.count()).toBe(1);
     expect(console.error.calls.argsFor(0)[0]).toBe(
       'Warning: Component: prop type `prop` is invalid; ' +
-        'it must be a function, usually from React.PropTypes.',
+        'it must be a function, usually provided by the `prop-types` library.',
     );
   });
 
@@ -86,7 +86,7 @@ describe('create-react-class-integration', () => {
     expect(console.error.calls.count()).toBe(1);
     expect(console.error.calls.argsFor(0)[0]).toBe(
       'Warning: Component: context type `prop` is invalid; ' +
-        'it must be a function, usually from React.PropTypes.',
+        'it must be a function, usually provided by the `prop-types` library.',
     );
   });
 
@@ -104,7 +104,7 @@ describe('create-react-class-integration', () => {
     expect(console.error.calls.count()).toBe(1);
     expect(console.error.calls.argsFor(0)[0]).toBe(
       'Warning: Component: child context type `prop` is invalid; ' +
-        'it must be a function, usually from React.PropTypes.',
+        'it must be a function, usually provided by the `prop-types` library.',
     );
   });
 

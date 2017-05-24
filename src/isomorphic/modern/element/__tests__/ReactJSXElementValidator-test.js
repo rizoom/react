@@ -358,7 +358,7 @@ describe('ReactJSXElementValidator', () => {
     expectDev(console.error.calls.count()).toBe(1);
     expectDev(console.error.calls.argsFor(0)[0]).toContain(
       'NullPropTypeComponent: prop type `prop` is invalid; it must be a ' +
-        'function, usually from React.PropTypes.',
+        'function, usually provided by the `prop-types` library.',
     );
   });
 
@@ -376,7 +376,7 @@ describe('ReactJSXElementValidator', () => {
     expectDev(console.error.calls.count()).toBe(1);
     expectDev(console.error.calls.argsFor(0)[0]).toContain(
       'NullContextTypeComponent: context type `prop` is invalid; it must ' +
-        'be a function, usually from React.PropTypes.',
+        'function, usually provided by the `prop-types` library.',
     );
   });
 
